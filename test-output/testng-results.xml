@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-27T23:44:46 IST" name="Default suite" finished-at="2022-10-27T23:45:04 IST" duration-ms="17950">
+  <suite started-at="2022-10-31T17:34:58 IST" name="Default suite" finished-at="2022-10-31T17:35:19 IST" duration-ms="21159">
     <groups>
     </groups>
-    <test started-at="2022-10-27T23:44:46 IST" name="Default test" finished-at="2022-10-27T23:45:04 IST" duration-ms="17950">
-      <class name="com.Selenium.Practice.FindElementsConcept">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Selenium.Practice.FindElementsConcept@247310d0]" started-at="2022-10-27T23:44:46 IST" name="setUp" finished-at="2022-10-27T23:44:54 IST" duration-ms="7480" status="PASS">
+    <test started-at="2022-10-31T17:34:58 IST" name="Default test" finished-at="2022-10-31T17:35:19 IST" duration-ms="21159">
+      <class name="com.Selenium.Practice.Navigations">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Selenium.Practice.Navigations@247310d0]" started-at="2022-10-31T17:34:58 IST" name="setUp" finished-at="2022-10-31T17:35:06 IST" duration-ms="8365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkElementsOnPage()[pri:0, instance:com.Selenium.Practice.FindElementsConcept@247310d0]" started-at="2022-10-27T23:44:54 IST" name="checkElementsOnPage" finished-at="2022-10-27T23:45:04 IST" duration-ms="10404" status="PASS">
+        <test-method signature="navigations()[pri:0, instance:com.Selenium.Practice.Navigations@247310d0]" started-at="2022-10-31T17:35:06 IST" name="navigations" finished-at="2022-10-31T17:35:19 IST" duration-ms="12733" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkElementsOnPage -->
-      </class> <!-- com.Selenium.Practice.FindElementsConcept -->
+        </test-method> <!-- navigations -->
+      </class> <!-- com.Selenium.Practice.Navigations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
