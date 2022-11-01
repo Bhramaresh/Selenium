@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Selenium.Practice.customXpath">
+      <class name="com.Selenium.Practice.ScreenshotUsingSelenium">
         <methods>
           <include name="setUp"/>
-          <include name="custom_Xpath"/>
         </methods>
-      </class> <!-- com.Selenium.Practice.customXpath -->
+      </class> <!-- com.Selenium.Practice.ScreenshotUsingSelenium -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

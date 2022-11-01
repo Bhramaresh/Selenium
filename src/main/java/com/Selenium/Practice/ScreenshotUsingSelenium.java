@@ -27,8 +27,8 @@ public class ScreenshotUsingSelenium {
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("C:\\Users\\user\\Documents\\workspace-spring-tool-suite-4-4.14.1.RELEASE\\Selenium-Practice\\Selenium-Practice\\src\\main\\java\\com\\Selenium\\Practice/google.png"));
-
+		FileUtils.copyFile(src, new File("C:\\Users\\user\\Documents\\workspace-spring-tool-suite-4-4.14.1.RELEASE\\Selenium-Practice\\Selenium-Practice\\src\\main\\java\\com\\Selenium\\Practice\\google.png"));
+		
 	}
 
 }
