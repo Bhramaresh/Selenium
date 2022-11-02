@@ -36,6 +36,8 @@ public class Navigations {
 		Thread.sleep(3000);
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		driver.navigate().forward();
+		Thread.sleep(3000);
+		driver.navigate().refresh();
 		
 	}
 
