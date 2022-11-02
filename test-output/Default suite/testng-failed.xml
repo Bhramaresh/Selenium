@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Selenium.Practice.ScreenshotUsingSelenium">
+      <class name="com.Selenium.Practice.ExplicitWait">
         <methods>
-          <include name="setUp"/>
+          <include name="explicitWait"/>
         </methods>
-      </class> <!-- com.Selenium.Practice.ScreenshotUsingSelenium -->
+      </class> <!-- com.Selenium.Practice.ExplicitWait -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
