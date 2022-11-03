@@ -17,8 +17,7 @@ public class ScreenshotUsingSelenium {
 
 	@Test
 	public void setUp() throws IOException {
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\user\\Documents\\workspace-spring-tool-suite-4-4.14.1.RELEASE\\Selenium-Practice\\Selenium-Practice\\src\\main\\java\\com\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\user\\Documents\\workspace-spring-tool-suite-4-4.14.1.RELEASE\\Selenium-Practice\\Selenium-Practice\\src\\main\\java\\com\\Drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("http://www.google.com");
 		driver.manage().deleteAllCookies();

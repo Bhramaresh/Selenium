@@ -25,7 +25,7 @@ public class ExplicitWait {
 		driver.get("https://www.amazon.in/");
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		clickOn(driver, driver.findElement(By.linkText("Account & Lists")),40 );
+		clickOn(driver, driver.findElement(By.cssSelector("a#nav-link-accountList")),40 );
 		
 		
 	}

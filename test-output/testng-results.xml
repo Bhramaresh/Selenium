@@ -2,105 +2,50 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-02T19:01:43 IST" name="Default suite" finished-at="2022-11-02T19:01:47 IST" duration-ms="3878">
+  <suite started-at="2022-11-03T11:35:23 IST" name="Default suite" finished-at="2022-11-03T11:36:00 IST" duration-ms="37733">
     <groups>
     </groups>
-    <test started-at="2022-11-02T19:01:43 IST" name="Default test" finished-at="2022-11-02T19:01:47 IST" duration-ms="3878">
+    <test started-at="2022-11-03T11:35:23 IST" name="Default test" finished-at="2022-11-03T11:36:00 IST" duration-ms="37733">
       <class name="com.Selenium.Practice.ExplicitWait">
-        <test-method signature="explicitWait()[pri:0, instance:com.Selenium.Practice.ExplicitWait@3f191845]" started-at="2022-11-02T19:01:43 IST" name="explicitWait" finished-at="2022-11-02T19:01:47 IST" duration-ms="3831" status="FAIL">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method signature="explicitWait()[pri:0, instance:com.Selenium.Practice.ExplicitWait@909217e]" started-at="2022-11-03T11:35:23 IST" name="explicitWait" finished-at="2022-11-03T11:36:00 IST" duration-ms="37698" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 105
-Current browser version is 107.0.5304.88 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"a#nav-link-accountLis"}
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'BBALLA-MAIT182', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-Ordinal0 [0x0030C0A3+2212003]
-Ordinal0 [0x002A2CC1+1780929]
-Ordinal0 [0x001B465D+804445]
-Ordinal0 [0x001D68EC+944364]
-Ordinal0 [0x001D1E30+925232]
-Ordinal0 [0x001CF5B9+914873]
-Ordinal0 [0x00203AD9+1129177]
-Ordinal0 [0x0020373A+1128250]
-Ordinal0 [0x001FEA36+1108534]
-Ordinal0 [0x001D83C9+951241]
-Ordinal0 [0x001D9396+955286]
-GetHandleVerifier [0x005B9CE2+2746722]
-GetHandleVerifier [0x005AA234+2682548]
-GetHandleVerifier [0x0039B34A+524234]
-GetHandleVerifier [0x00399B60+518112]
-Ordinal0 [0x002A9FBC+1810364]
-Ordinal0 [0x002AEA28+1829416]
-Ordinal0 [0x002AEB15+1829653]
-Ordinal0 [0x002B8744+1869636]
-BaseThreadInitThunk [0x76ADFA29+25]
-RtlGetAppContainerNamedObjectPath [0x77867BBE+286]
-RtlGetAppContainerNamedObjectPath [0x77867B8E+238]
-(No symbol) [0x00000000]
-]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir12660_2080673901}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:56486}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=107.0.5304.88, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 5c78b21d689d07014c6b5ba13b586586
+*** Element info: {Using=css selector, value=a#nav-link-accountLis}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 105
-Current browser version is 107.0.5304.88 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a#nav-link-accountLis"}
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'BBALLA-MAIT182', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-Ordinal0 [0x0030C0A3+2212003]
-Ordinal0 [0x002A2CC1+1780929]
-Ordinal0 [0x001B465D+804445]
-Ordinal0 [0x001D68EC+944364]
-Ordinal0 [0x001D1E30+925232]
-Ordinal0 [0x001CF5B9+914873]
-Ordinal0 [0x00203AD9+1129177]
-Ordinal0 [0x0020373A+1128250]
-Ordinal0 [0x001FEA36+1108534]
-Ordinal0 [0x001D83C9+951241]
-Ordinal0 [0x001D9396+955286]
-GetHandleVerifier [0x005B9CE2+2746722]
-GetHandleVerifier [0x005AA234+2682548]
-GetHandleVerifier [0x0039B34A+524234]
-GetHandleVerifier [0x00399B60+518112]
-Ordinal0 [0x002A9FBC+1810364]
-Ordinal0 [0x002AEA28+1829416]
-Ordinal0 [0x002AEB15+1829653]
-Ordinal0 [0x002B8744+1869636]
-BaseThreadInitThunk [0x76ADFA29+25]
-RtlGetAppContainerNamedObjectPath [0x77867BBE+286]
-RtlGetAppContainerNamedObjectPath [0x77867B8E+238]
-(No symbol) [0x00000000]
-
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir12660_2080673901}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:56486}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=107.0.5304.88, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 5c78b21d689d07014c6b5ba13b586586
+*** Element info: {Using=css selector, value=a#nav-link-accountLis}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$22(ProtocolHandshake.java:365)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:368)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:159)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:137)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:184)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:171)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:124)
-at com.Selenium.Practice.ExplicitWait.explicitWait(ExplicitWait.java:22)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:501)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+at com.Selenium.Practice.ExplicitWait.explicitWait(ExplicitWait.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -131,7 +76,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- explicitWait -->
