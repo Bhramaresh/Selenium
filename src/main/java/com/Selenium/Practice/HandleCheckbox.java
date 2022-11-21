@@ -31,13 +31,18 @@ public class HandleCheckbox {
 //			 System.out.println(ele.getText());
 //		 }
 		 
-		 for (WebElement webElement : checks) {
+		 /*for (WebElement webElement : checks) {
 			 String s = webElement.getAttribute("id");
 			 if (s.equalsIgnoreCase("monday") || s.equalsIgnoreCase("sunday")) {
 				webElement.click();
 				
 			}
 			
+		}*/
+		 
+		int count = checks.size();
+		for(int i = 5; i<count;i++) {
+			checks.get(i).click();
 		}
 
 	}
