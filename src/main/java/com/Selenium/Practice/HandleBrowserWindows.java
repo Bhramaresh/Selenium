@@ -54,7 +54,6 @@ public class HandleBrowserWindows {
 			String title = driver.switchTo().window(str).getTitle();
 			if(title.equalsIgnoreCase("OrangeHRM"))
 				driver.close();
-			
 		}
 		
 		
