@@ -16,26 +16,29 @@ public class Alerts {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
-		//Java Script Alert with OK button
 		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
+		//Java Script Alert with OK button
+		
 		/*driver.findElement(By.xpath("//button[@onclick='jsAlert()']")).click();
-		Thread.sleep(3000);
 		driver.switchTo().alert().accept();*/
+		
 		
 		//Java Script alert with OK and cancel button
 		/*driver.findElement(By.xpath("//button[@onclick='jsConfirm()']")).click();
-		Thread.sleep(3000);
-		//driver.switchTo().alert().accept();
-		driver.switchTo().alert().dismiss();*/
+		driver.switchTo().alert().accept();//It will accept the Alert popup
+		driver.switchTo().alert().dismiss();//It will cancel the Alert popup*/
+		
+		
+				
+		//Java Script alert with text feild box 
 		
 		driver.findElement(By.xpath("//button[@onclick='jsPrompt()']")).click();
-		Alert alert_window = driver.switchTo().alert();
-		Thread.sleep(3000);
-		alert_window.sendKeys("Welcome");
-		Thread.sleep(3000);
-		System.out.println("alert message "+alert_window.getText());
-		alert_window.dismiss();
+		Alert alert = driver.switchTo().alert();
+		alert.sendKeys("bhramaresh");
+		System.out.println(alert.getText());
+		alert.accept();
+		
+		
 		
 		
 

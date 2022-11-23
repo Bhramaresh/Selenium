@@ -16,7 +16,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class HandeBrokenLinks {
 
-	public static void main(String[] args) throws MalformedURLException {
+	public static void main(String[] args) throws IOException {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		
@@ -25,34 +25,35 @@ public class HandeBrokenLinks {
 		
 		driver.get("http://www.deadlinkcity.com/");
 		
-		List<WebElement> links = driver.findElements(By.tagName("a"));
-		int brokenLinks = 0;
-		for(WebElement link:links) {
-			String url = link.getAttribute("href");
+		
+		List<WebElement> links =  driver.findElements(By.xpath("//a"));
+		
+		for(WebElement ele : links) {
+			String link_url = ele.getAttribute("href");
 			
-			if(url == null || url.isEmpty()) {
-				System.out.println("URL is EMPTY");
+			if(link_url==null || link_url.isEmpty()) {
+				System.out.println(link_url+" URL is Empty");
 				continue;
 			}
 			
-			URL url_link = new URL(url);//This is the class from java.net package to convert the String to URL
-			try {
-				HttpURLConnection httpconn = (HttpURLConnection) url_link.openConnection();//This is the class from java.net package, it is used to establish the connection to the particular URL
-				httpconn.connect();
-				if(httpconn.getResponseCode()>=400) {
-					System.out.println(httpconn.getResponseCode()+" "+url+" "+" is Briken LInk");
-					brokenLinks++;
-				}
-				else{
-					System.out.println(httpconn.getResponseCode()+" "+url+" is valid Link");
-				}
-			} catch (IOException e) {
+			URL url = new URL(link_url);
+			
+			HttpURLConnection url_conn = (HttpURLConnection) url.openConnection();
+			url_conn.connect();
+			
+			if (url_conn.getResponseCode() >= 400) {
+				System.out.println(url_conn+" Invalid URL");
 				
-				e.printStackTrace();
+			}
+			else {
+				System.out.println(url_conn+" Valid URL");
+			}
+			
+		
+			
+				
 			}
 		}
-		System.out.println("number of broken links"+ brokenLinks);
-
-	}
 
 }
+
