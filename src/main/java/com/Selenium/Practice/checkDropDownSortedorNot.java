@@ -34,8 +34,8 @@ public class checkDropDownSortedorNot {
 		
 		List<WebElement> list = dropSelect.getOptions();
 		
-		ArrayList originalList = new ArrayList();
-		ArrayList tempList = new ArrayList();
+		ArrayList<String> originalList = new ArrayList<String>();
+		ArrayList<String> tempList = new ArrayList<String>();
 		
 		for(WebElement ele:list) {
 			originalList.add(ele.getText());
